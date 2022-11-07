@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>SMK AJALAH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a class="smk" href="index.html">SMK<span>Ajalah</span></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PROFIL</a></li>
+                    <li><a href="">JURUSAN</a></li>
+                    <li><a href="">KONTAK</a></li>  
+                    <li><a href="">SEJARAH</a></li>  
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"onclick="showMenu()"></i>
+        </nav>
+            <div class="text-box">
+                <h1>SMK TERBAIK HANYA ADA DISINI</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque hic nostrum quam quasi inventore optio deleniti architecto quaerat ipsa voluptate officiis exercitationem, illum explicabo, nobis odit harum eos laborum! Ex.</p>
+                <a href="">Admission criteria</a>
+            </div>
+    </section>
+<script>
+    var navlinks = document.getElementById('navlinks');
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.stle.right = "-200px";
+    }
+</script>
+</body>
+</html>
